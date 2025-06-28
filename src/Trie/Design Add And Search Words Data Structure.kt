@@ -14,14 +14,12 @@ class WordDictionary() {
     }
 
     fun search(word: String): Boolean {
-
         return search(root, 0, word)
     }
 
     private fun search(node: TrieNode?, index: Int, word: String ): Boolean {
         node?.let { node ->
             if (index == word.length) return node.isEndOfWord
-
             val ch = word[index]
             if (node.children[ch] != null) return search(node.children[ch], index + 1, word)
             else if (ch == '.') {
