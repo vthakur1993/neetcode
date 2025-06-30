@@ -31,7 +31,7 @@ class Solution {
         if (!trie.startsWith(currentWord)) {
             return
         }
-        if (trie.searchWord(currentWord) && !result.contains(currentWord)) {
+        if (trie.search(currentWord) && !result.contains(currentWord)) {
             result.add(currentWord)
             //return
         }
@@ -43,34 +43,4 @@ class Solution {
         search(visited, rowIndex, colIndex - 1, board, trie, result, currentWord)
         visited[rowIndex][colIndex] = false
     }
-}
-
-class Trie {
-    val root = TrieNode()
-
-    fun insertWord(word: String) {
-        var node = root
-        word.forEach {
-            node = node.children.computeIfAbsent(it) {TrieNode()}
-        }
-        node.isEndOfWord = true
-    }
-
-    fun startsWith(word: String): Boolean {
-        var node = root
-        word.forEach {
-            node = node.children[it] ?: return false
-        }
-        return true
-    }
-
-    fun searchWord(word: String): Boolean {
-        var node = root
-        word.forEach {
-            node = node.children[it] ?: return false
-        }
-        return node.isEndOfWord
-    }
-
-
 }

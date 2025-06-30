@@ -5,7 +5,7 @@ Implement Trie Prefix Tree
  */
 
 
-private class Trie {
+class Trie {
     private val root = TrieNode()
     fun insertWord(word: String) {
         var node = root
