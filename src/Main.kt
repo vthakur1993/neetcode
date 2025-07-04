@@ -7,9 +7,17 @@ import backtracking.combinationSum
 fun main() {
     var temp = "vipul"
     var char = 'a'
-
-    println(temp.substring(0..1))
-
-    println(temp.substring(1..2))
+    repeat(2) {
+        println(it)
+    }
+    val n = 2
+    val matrix = MutableList(n) { // Creates the outer list of size n
+        MutableList(n) { '.' }     // For each row, creates an inner list of size n, initialized with '.'
+    }
+    val list = mutableListOf<String>()
+    matrix.forEach {
+        list.add(it.joinToString(separator = ""))
+    }
+    println(list)
 }
 
