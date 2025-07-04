@@ -1,6 +1,9 @@
 package backtracking
 
-// https://leetcode.com/problems/permutations/
+/*
+    LeetCode: https://leetcode.com/problems/permutations/
+    NeetCode: https://neetcode.io/problems/permutations?list=neetcode150
+ */
 
 // My Solution
 fun permute(nums: IntArray): List<List<Int>> {
