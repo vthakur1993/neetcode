@@ -1,23 +1,16 @@
-import Trie.WordDictionary
-import backtracking.Subsets
-import backtracking.combinationSum
+import java.util.PriorityQueue
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    var temp = "vipul"
-    var char = 'a'
-    repeat(2) {
-        println(it)
+    val minHeap = PriorityQueue<Int>()
+    var list = listOf(4,5,8,2,3,5,10,9,4)
+    list.forEach {
+        minHeap.offer(it)
     }
-    val n = 2
-    val matrix = MutableList(n) { // Creates the outer list of size n
-        MutableList(n) { '.' }     // For each row, creates an inner list of size n, initialized with '.'
+    println(minHeap)
+    repeat(list.size) {
+        println(minHeap.poll())
     }
-    val list = mutableListOf<String>()
-    matrix.forEach {
-        list.add(it.joinToString(separator = ""))
-    }
-    println(list)
 }
 
