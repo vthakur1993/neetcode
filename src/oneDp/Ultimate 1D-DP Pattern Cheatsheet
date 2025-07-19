@@ -1,0 +1,56 @@
+🤔 What is Dynamic Programming?
+    Dynamic Programming (DP) is a technique to solve problems by breaking them down into overlapping subproblems and solving each subproblem only once, storing the results.
+
+Use DP when:
+    Problem asks for maximum, minimum, count, or true/false
+    Subproblems overlap
+    The problem has optimal substructure
+
+🧮 When is 1D DP Applicable?
+    1D arrays are used when:
+        Only one parameter determines the state (like the current index or sum).
+        You're optimizing space from 2D to 1D (e.g., dp[i] depends only on dp[i-1], dp[i-2], etc.)
+
+
+
+Ultimate 1D-DP Pattern Cheatsheet
+
+1. Fibonacci Style (Linear DP)
+Description: Problems that depend on the last one or two states.
+Example Problems: Climbing Stairs, Fibonacci, Min Cost Climbing Stairs
+
+2. Target Sum / Subset Sum
+Description: Check if a subset of numbers meets a target sum.
+Example Problems: Subset Sum, Target Sum, Partition Equal Subset Sum
+
+3. Coin Change (Min/Count Ways)
+Description: Find the number of combinations or minimum coins to reach a target.
+Example Problems: Coin Change, Combination Sum IV
+
+4. Unbounded Knapsack
+Description: Items can be used multiple times to achieve a goal.
+Example Problems: Rod Cutting, Integer Break, Word Break
+
+5. Bounded Knapsack / 0-1 DP
+Description: Each item can be picked at most once.
+Example Problems: House Robber, Maximum Subarray
+
+6. Prefix Sum + DP
+Description: Use prefix sum to speed up range queries in DP.
+Example Problems: Maximum Sum of 3 Non-Overlapping Subarrays
+
+7. Merging Intervals DP
+Description: DP over ranges or merges like matrix multiplication or game burst.
+Example Problems: Burst Balloons, Matrix Chain Multiplication
+
+8. LIS / LDS Style
+Description: Track increasing/decreasing subsequences.
+Example Problems: Longest Increasing Subsequence, Russian Doll Envelopes
+
+9. Partition DP
+Description: Divide array/string into parts with optimal substructure.
+Example Problems: Palindrome Partitioning, Minimum Cuts
+
+10. Digit DP
+Description: Count numbers with constraints using digit positions.
+Example Problems: Count numbers without 4, Sum of digits X
