@@ -10,7 +10,6 @@ fun numDecodings(s: String): Int {
     if (n == 1) return 1
 
     val dp = mutableMapOf<Int, Int>(s.length to 1)
-
     for (i in n-1 downTo 0) {
         if (s[i] == '0') dp[i] = 0
         else {
@@ -21,4 +20,6 @@ fun numDecodings(s: String): Int {
         }
     }
     return dp[0]!!
+
+
 }
