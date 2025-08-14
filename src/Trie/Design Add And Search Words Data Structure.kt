@@ -3,7 +3,6 @@ package Trie
 
 class WordDictionary() {
     val root = TrieNode()
-
     fun addWord(word: String) {
         var node = root
         word.forEach {
@@ -33,3 +32,4 @@ class WordDictionary() {
     }
 
 }
+

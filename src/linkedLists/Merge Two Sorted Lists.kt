@@ -4,7 +4,6 @@ package linkedLists
     Leetcode: https://leetcode.com/problems/merge-two-sorted-lists/description/
     Neetcode: https://neetcode.io/problems/merge-two-sorted-linked-lists?list=neetcode150
  */
-
 fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
     val dummy = ListNode(0)
     var node: ListNode? = dummy
